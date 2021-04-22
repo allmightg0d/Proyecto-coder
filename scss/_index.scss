@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index{
+    background-image: url(../images/gifinicial.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    text-align: center;
+}
+
+.container span {
+    font-size: 100pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.container span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.container span::after {
+    content: var(--l);
+    position: absolute;
+    height: 200%;
+    width: 100px;
+    top: 10%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(80deg);
+}
+
+.container span:hover {
+    filter: contrast(150%);
+}
+
+.container span:nth-child(1) {
+    color: #00bef8;
+}
+
+.container span:nth-child(2) {
+    color: #00bef8;
+}
+.container span:nth-child(3) {
+    color: #00bef8;
+}
+.container span:nth-child(4) {
+    color: #00bef8;
+}
+.container span:nth-child(5) {
+    color: #00bef8;
+}
+
+body{
+    background-color: #0a0a0a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-1 {
+    box-shadow: 0 5px 10px 0 #00bef8 inset, 0 5px 10px 0 #00bef8, 0 5px 10px 0 #00bef8 inset, 0 5px 10px 0 #00bef8;
+    background-color: #00bef8;
+    width: 177px;
+    height: 5rem;
+    display: flex;
+    text-align: justify;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+nav ul {
+    float: left;
+    display: flex;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    text-align: justify;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0rem 2rem;
+    line-height: 5rem;
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    border: 7px solid #00bef8;
+    background-color: #00bef8;
+    width: 163px;
+}
+
+nav ul li:hover ul {
+    display: block;
+    box-shadow: 0 5px 10px 0 #00bef8 inset, 0 5px 10px 0 #00bef8, 0 5px 10px 0 #00bef8 inset, 0 5px 10px 0 #00bef8;
+}
+
+nav ul li ul li  {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 1rem 2rem;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+nav ul li ul li a:hover {
+    background-color: #00bef8;
+}
+
+.social-networks{
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.social-networks a {
+    display: inline-flex;
+    color: #ffffff;
+    height: 48px;
+    width: 48px;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: transform 0.4s;
+}
+
+.social-networks a:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px 0 rgba(106, 115, 117, 100);
+}
+
+.social-networks a.facebook {
+    background-color: #3c70a4;
+}
+
+.social-networks a.twitter {
+    background-color: #5bd1d7;
+}
+
+.social-networks a.youtube {
+    background-color: #c72c41;
+}
+
+.social-networks a.instagram {
+    background-color: #bb7171;
+}
+
+footer{
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.titulo-final{
+    font-size: 15px;
+}
+
+@media screen and (max-width:600px){
+    .index{
+        width: 100%;
+        background-image: url(../images/pupi.gif);
+        background-position: top;
+        background-size: auto;
+    }
+    .container span{
+        font-size: 70px;
+        
+    }
+    .social-networks{
+        margin-top: 120px;
+    }
+    .social-networks a{
+        display: grid;
+        margin-top: 10px;
+    }
+    .nav-1{
+        width: 120px;
+        height: 75px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: 100px;
+    }
+    nav ul li ul{
+        width: 107px;
+    }
+    nav ul li ul li a{
+        padding: 1rem 1rem;
+    }
+    nav ul li a{
+        padding: 0rem 1rem;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    opacity: 80%;
+    height: 9em;
+    width: 100vw;
+    font-family: "Open Sans";
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    opacity: 100%;
+    width: 100vw;
+    height: 10px;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+

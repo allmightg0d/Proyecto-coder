@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.index-feed{
+    background-image: url(../images/gifffff.gif);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 1750px;
+
+}
+
+.container-4{
+    text-align: center;
+}
+
+.container-4 span {
+    font-size: 80pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.container-4 span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.container-4 span::after {
+    content: var(--l);
+    position: absolute;
+    height: 200%;
+    width: 100px;
+    top: 10%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(80deg);
+}
+
+.container-4 span:hover {
+    filter: contrast(250%);
+}
+
+.container-4 span:nth-child(1) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(2) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(3) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(4) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(5) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(6) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(7) {
+    color: #8800f8;
+}
+.container-4 span:nth-child(8) {
+    color: #8800f8;
+}
+
+.container2{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    transform: translate(-55%, -60%);
+}
+
+.button2{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    padding: 10px;
+    font-size: 30px;
+    color: #8800f8;
+    font-family: fantasy;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: 1.5s;
+}
+
+.button2:hover{
+    box-shadow: 0 5px 10px 0 #8800f8 inset, 0 5px 10px 0 #8800f8, 0 5px 10px 0 #8800f8 inset, 0 5px 10px 0 #8800f8;
+    text-shadow: 0 0 0 #8800f8, 0 0 0 #8800f8;
+}
+
+.qqq{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 60px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+.testimonial {
+    width:350px;
+    display:inline-block;
+    margin: 0 20px;
+    transition: .5s;
+}
+.testimonial:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 0 20px 5px rgb(185, 131, 255);
+}
+.testimonial .card {
+    position:relative;
+    overflow:hidden;
+    width:350px;
+    height: 500px;
+    margin:0 auto;
+    background:#2c2c2c;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+.testimonial .card .layer {
+    z-index:1;
+    position:absolute;
+    top: 0;
+    left: 99.5%;
+    height:100%;
+    width:100%;
+    background:linear-gradient(to bottom right , #8800f8, #9b9b9b);
+    transition:0.5s;
+}
+.testimonial .card:hover  .layer{
+    left: 0;
+}
+.testimonial .card .content {
+    z-index:2; 
+    position:relative;
+}
+.testimonial .card .content p {
+    font-size:14px;
+    line-height:24px;
+    color:#fff;
+    padding-bottom: 40px;
+}
+.testimonial .card .content .image {
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 30px rgba(197, 197, 197, 0.822);
+    transition: .5s;
+}
+.testimonial:hover .card .content .details h2{
+    color: white;
+}
+.testimonial .card .content .details h2 {
+    font-size:30px;
+    color:black;
+    transition:0.5s;
+}
+.testimonial .card .content .details h2 span {
+    font-size:18px;
+    color:black;
+    transition:0.5s;
+}
+.testimonial .card:hover .content .details h2 span {
+    color:white;
+    position:relative;
+}
+
+.qqq2{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    padding-top: 150px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+.testimonial2 {
+    width:350px;
+    display:inline-block;
+    margin: 0 20px;
+    transition: .5s;
+}
+.testimonial2:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 0 20px 5px rgb(185, 131, 255);
+}
+.testimonial2 .card2 {
+    position:relative;
+    overflow:hidden;
+    width:350px;
+    height: 500px;
+    margin:0 auto;
+    background:#2c2c2c;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+.testimonial2 .card2 .layer2 {
+    z-index:1;
+    position:absolute;
+    top: 0;
+    left: 99.5%;
+    height:100%;
+    width:100%;
+    background:linear-gradient(to bottom right , #8800f8, #9b9b9b);
+    transition:0.5s;
+}
+.testimonial2 .card2:hover  .layer2{
+    left: 0;
+}
+.testimonial2 .card2 .content2 {
+    z-index:2; 
+    position:relative;
+}
+.testimonial2 .card2 .content2 p {
+    font-size:14px;
+    line-height:24px;
+    color:#fff;
+    padding-bottom: 40px;
+}
+.testimonial2 .card2 .content2 .image2 {
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 30px rgba(197, 197, 197, 0.822);
+    transition: .5s;
+}
+.testimonial2:hover .card2 .content2 .details2 h2{
+    color: white;
+}
+.testimonial2 .card2 .content2 .details2 h2 {
+    font-size:30px;
+    color:black;
+    transition:0.5s;
+}
+.testimonial2 .card2 .content2 .details2 h2 span {
+    font-size:18px;
+    color:black;
+    transition:0.5s;
+}
+.testimonial2 .card2:hover .content2 .details2 h2 span {
+    color:white;
+    position:relative;
+}
+
+.qqq3{
+    position: absolute;
+    top: 181%;
+    left: 50%;
+    padding-top: 70px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+.testimonial3 {
+    width:350px;
+    display:inline-block;
+    margin: 0 20px;
+    transition: .5s;
+}
+.testimonial3:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 0 20px 5px rgb(185, 131, 255);
+}
+.testimonial3 .card3 {
+    position:relative;
+    overflow:hidden;
+    width:350px;
+    height: 500px;
+    margin:0 auto;
+    background:#2c2c2c;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+.testimonial3 .card3 .layer3 {
+    z-index:1;
+    position:absolute;
+    top: 0;
+    left: 99.5%;
+    height:100%;
+    width:100%;
+    background:linear-gradient(to bottom right , #8800f8, #9b9b9b);
+    transition:0.5s;
+}
+.testimonial3 .card3:hover  .layer3{
+    left: 0;
+}
+.testimonial3 .card3 .content3 {
+    z-index:2; 
+    position:relative;
+}
+.testimonial3 .card3 .content3 p {
+    font-size:14px;
+    line-height:24px;
+    color:#fff;
+    padding-bottom: 40px;
+}
+.testimonial3 .card3 .content3 .image3 {
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 30px rgba(197, 197, 197, 0.822);
+    transition: .5s;
+}
+.testimonial3:hover .card3 .content3 .details3 h2{
+    color: white;
+}
+.testimonial3 .card3 .content3 .details3 h2 {
+    font-size:30px;
+    color:black;
+    transition:0.5s;
+}
+.testimonial3 .card3 .content3 .details3 h2 span {
+    font-size:18px;
+    color:black;
+    transition:0.5s;
+}
+.testimonial3 .card3:hover .content3 .details3 h2 span {
+    color:white;
+    position:relative;
+}
+
+@media screen and (max-width:600px){
+    .index-feed{
+        background-repeat: repeat-y;
+    }
+
+    .container-4 {
+        margin-left: 170px;
+        margin-bottom: 10px;
+        }
+    .container2 {
+        margin-left: 50px;
+        }
+    .container-4 span {
+        font-size: 40px;
+        }
+    .qqq{
+        display: flex;
+        flex-wrap:wrap;
+        margin-top: 480px;
+    }
+    .qqq2{
+        display: flex;
+        flex-wrap:wrap;
+        margin-top: 1620px;
+    }
+    .qqq3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2775px;
+    }
+    .testimonial{
+        margin: 15px;
+    }
+}

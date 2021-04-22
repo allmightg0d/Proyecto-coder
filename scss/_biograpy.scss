@@ -1,0 +1,203 @@
+.index-biography{
+    background-image: url(../images/giffffff.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container5{
+    text-align: center;
+}
+
+.container5 span {
+    font-size: 80pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.container5 span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.container5 span::after {
+    content: var(--l);
+    position: absolute;
+    height: 200%;
+    width: 100px;
+    top: 10%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(80deg);
+}
+
+.container5 span:hover {
+    filter: contrast(250%);
+}
+
+.container5 span:nth-child(1) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(2) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(3) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(4) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(5) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(6) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(7) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(8) {
+    color: #f8aa00d8;
+}
+.container5 span:nth-child(9) {
+    color: #f8aa00d8;
+}
+
+.container3{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    transform: translate(-55%, -60%);
+}
+
+.button3{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    padding: 10px;
+    font-size: 30px;
+    color: #f8aa00d8;
+    font-family: fantasy;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: 1.5s;
+}
+
+.button3:hover{
+    box-shadow: 0 5px 10px 0 #f8aa00d8 inset, 0 5px 10px 0 #f8aa00d8, 0 5px 10px 0 #f8aa00d8 inset, 0 5px 10px 0 #f8aa00d8;
+    text-shadow: 0 0 0 #f8aa00d8, 0 0 0 #f8aa00d8;
+}
+
+.pp{
+    padding: 10px;
+}
+
+article{
+    font-size: 20px;
+    color: rgb(255, 184, 97);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.content-all{
+    width: 250px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel figure{
+    width: 50%;
+    height: 160px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .index-biography{
+        background-repeat: repeat-y;
+    }
+
+    .container5 {
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+    .container5 span {
+        font-size: 30px;
+    }
+    .container3 {
+        margin-left: 50px;
+    }
+    article {
+        font-size: 13px;
+        text-align: center;
+    }
+    .content-all{
+        width: 50%;
+        height: 50px;
+        perspective: 800px
+    }
+    .content-carrousel{
+        width: 100%;
+    }
+    .content-carrousel figure{
+        width: 50%;
+    }
+}
+
